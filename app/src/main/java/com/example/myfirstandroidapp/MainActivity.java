@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-
     }
 
     public void doSomething(View button){
@@ -34,14 +33,14 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void changeText(View v) {
-        ((Button) v).setText("Text Changed!");
+    public void registerActivity(View v) {
+        Intent i = new Intent(this, RegisterActivity.class);
+        startActivity(i);
     }
 
-    public void loginPage(View v) {
+    public void loginActivity(View v) {
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
-
     }
 }
 
