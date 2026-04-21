@@ -9,11 +9,11 @@
 
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/registerUserHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="Register user"
+        android:text="@string/register"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,50 +21,56 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/registerUserUserName"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginTop="24dp"
         android:ems="10"
         android:inputType="text"
         android:text="@string/userNameInput"
+        android:hint="@string/userNameInput"
+        android:autofillHints="username"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/registerUserHeading" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/password1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginTop="24dp"
         android:ems="10"
         android:inputType="textPassword"
         android:text="@string/passwordInput"
+        android:hint="@string/passwordInput"
+        android:autofillHints="password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintTop_toBottomOf="@+id/registerUserUserName" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/password2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginTop="24dp"
         android:ems="10"
         android:inputType="textPassword"
         android:text="@string/passwordInput"
+        android:hint="@string/passwordInput"
+        android:autofillHints="password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/password1" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:background="#3782BF"
-        android:onClick="loginActivity"
-        android:text="Button"
+        android:background="#143049"
+        android:onClick="registerActivity"
+        android:text="@string/submitButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+        app:layout_constraintTop_toBottomOf="@+id/password2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
