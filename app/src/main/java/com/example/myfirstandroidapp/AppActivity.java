@@ -1,12 +1,9 @@
 package com.example.myfirstandroidapp;
-
 import android.os.Bundle;
 import android.widget.TextView;
-
 import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
 
-public class AppActivity extends AppCompatActivity {
+public class AppActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -8,12 +8,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.security.crypto.EncryptedSharedPreferences;
 import androidx.security.crypto.MasterKey;
 
 
-public class RegisterActivity extends AppCompatActivity {
+public class RegisterActivity extends BaseActivity {
     private EditText nameInput;
     private EditText password1Input;
     private EditText password2Input;
@@ -69,4 +68,6 @@ public class RegisterActivity extends AppCompatActivity {
             Toast.makeText(this, "Passwords do not match!", Toast.LENGTH_SHORT).show();
         }
     }
+
+
 }
